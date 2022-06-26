@@ -71,7 +71,7 @@ struct FeedCell: View {
                 .padding(.bottom, 2)
             
             HStack {
-                Text("batman").font(.system(size: 14,
+                Text("Mackenzie").font(.system(size: 14,
                                             weight: .semibold)) +
                 Text(" All men have limits. They learn what they are and learn not to exceed them. I ignore mine")
                     .font(.system(size: 15))
