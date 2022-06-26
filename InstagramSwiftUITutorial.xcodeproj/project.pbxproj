@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A57D62B2867FE9200D3EC07 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57D62A2867FE9200D3EC07 /* PostGridView.swift */; };
 		0AC7F7B12864A2B200996AEB /* InstagramSwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7F7B02864A2B200996AEB /* InstagramSwiftUITutorialApp.swift */; };
 		0AC7F7B52864A2B300996AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC7F7B42864A2B300996AEB /* Assets.xcassets */; };
 		0AC7F7B82864A2B300996AEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC7F7B72864A2B300996AEB /* Preview Assets.xcassets */; };
@@ -18,9 +19,11 @@
 		0AC7F7DE2864A9B300996AEB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7F7DD2864A9B300996AEB /* ProfileView.swift */; };
 		0AC7F7E02864A9C300996AEB /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7F7DF2864A9C300996AEB /* UploadPostView.swift */; };
 		0AC7F7E22864AFD900996AEB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7F7E12864AFD900996AEB /* FeedCell.swift */; };
+		0ADC438528675BF50092000D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC438428675BF50092000D /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A57D62A2867FE9200D3EC07 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		0AC7F7AD2864A2B200996AEB /* InstagramSwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC7F7B02864A2B200996AEB /* InstagramSwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		0AC7F7B42864A2B300996AEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		0AC7F7DD2864A9B300996AEB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0AC7F7DF2864A9C300996AEB /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		0AC7F7E12864AFD900996AEB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		0ADC438428675BF50092000D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC7F7D92864A97600996AEB /* SearchView.swift */,
+				0ADC438428675BF50092000D /* SearchBar.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 		0AC7F7D02864A66E00996AEB /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				0A57D62A2867FE9200D3EC07 /* PostGridView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -304,11 +310,13 @@
 			files = (
 				0AC7F7DA2864A97600996AEB /* SearchView.swift in Sources */,
 				0AC7F7D82864A93F00996AEB /* FeedView.swift in Sources */,
+				0A57D62B2867FE9200D3EC07 /* PostGridView.swift in Sources */,
 				0AC7F7C82864A4CD00996AEB /* ContentView.swift in Sources */,
 				0AC7F7B12864A2B200996AEB /* InstagramSwiftUITutorialApp.swift in Sources */,
 				0AC7F7D62864A8DF00996AEB /* MainTabView.swift in Sources */,
 				0AC7F7E02864A9C300996AEB /* UploadPostView.swift in Sources */,
 				0AC7F7DE2864A9B300996AEB /* ProfileView.swift in Sources */,
+				0ADC438528675BF50092000D /* SearchBar.swift in Sources */,
 				0AC7F7DC2864A99500996AEB /* NotificationsView.swift in Sources */,
 				0AC7F7E22864AFD900996AEB /* FeedCell.swift in Sources */,
 			);
