@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2DE2472869C2C70099A99F /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2DE2462869C2C70099A99F /* Community.swift */; };
+		0A2DE2492869CCE00099A99F /* communityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2DE2482869CCE00099A99F /* communityCell.swift */; };
 		0A309F0D2868B07A00C85DBB /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A309F0C2868B07A00C85DBB /* NotificationCell.swift */; };
 		0A57D62B2867FE9200D3EC07 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57D62A2867FE9200D3EC07 /* PostGridView.swift */; };
 		0A57D62D2868021A00D3EC07 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57D62C2868021A00D3EC07 /* UserCell.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A2DE2462869C2C70099A99F /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
+		0A2DE2482869CCE00099A99F /* communityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = communityCell.swift; sourceTree = "<group>"; };
 		0A309F0C2868B07A00C85DBB /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		0A57D62A2867FE9200D3EC07 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		0A57D62C2868021A00D3EC07 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -58,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2DE2452869C2AC0099A99F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				0A2DE2462869C2C70099A99F /* Community.swift */,
+				0A2DE2482869CCE00099A99F /* communityCell.swift */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		0AC7F7A42864A2B200996AEB = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +139,7 @@
 		0AC7F7C22864A37E00996AEB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A2DE2452869C2AC0099A99F /* test */,
 				0AC7F7D02864A66E00996AEB /* Items */,
 				0AC7F7CF2864A66300996AEB /* Authentication */,
 				0AC7F7CE2864A65900996AEB /* Notifications */,
@@ -330,11 +344,13 @@
 				0AC7F7DE2864A9B300996AEB /* ProfileView.swift in Sources */,
 				0A57D62D2868021A00D3EC07 /* UserCell.swift in Sources */,
 				0ADC438528675BF50092000D /* SearchBar.swift in Sources */,
+				0A2DE2492869CCE00099A99F /* communityCell.swift in Sources */,
 				0AC7F7DC2864A99500996AEB /* NotificationsView.swift in Sources */,
 				0AC7F7E22864AFD900996AEB /* FeedCell.swift in Sources */,
 				0A57D62F2868023400D3EC07 /* UserListView.swift in Sources */,
 				0A309F0D2868B07A00C85DBB /* NotificationCell.swift in Sources */,
 				0AAC2ABC2868A8600027F803 /* Extensions.swift in Sources */,
+				0A2DE2472869C2C70099A99F /* Community.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
