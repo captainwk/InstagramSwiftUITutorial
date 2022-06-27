@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Community: View {
+    @State private var isShowing = true
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView {
@@ -25,30 +26,25 @@ struct Community: View {
                     }
                     .padding(.bottom, 16)
                     
-                    
                     LazyVStack {
                         ForEach(0 ..< 3) { _ in
-                            communityCell()
+                            CommunityCell()
                         }
                     }
-                    
                 }
             }
             HStack{
                 Spacer()
-                Button(action: {
-                    //Place your action here
-                }) {
-                    Image(systemName: "plus")
-                        .font(.system(size: 50))
-                        .foregroundColor(.black)
-                }.padding()
+                NavigationLink(
+                    destination: CommunityAdd(),
+                    label: {
+                        Image(systemName: "plus")
+                            .font(.system(size: 50))
+                            .foregroundColor(.black)
+                            .padding()
+                    })
             }
         }
-        
-        
-        
-        
     }
 }
 

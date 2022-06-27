@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct communityCell: View {
+struct CommunityCell: View {
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
@@ -59,9 +59,9 @@ struct communityCell: View {
     }
 }
 
-struct communityCell_Previews: PreviewProvider {
+struct CommunityCell_Previews: PreviewProvider {
     static var previews: some View {
-        communityCell()
+        CommunityCell()
     }
 }
 
