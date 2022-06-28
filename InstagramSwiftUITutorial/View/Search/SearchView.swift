@@ -25,13 +25,6 @@ struct SearchView: View {
                 }
             }
         }
-        
-
-        
-        
-        
-        
-        
         // user list view
     }
 }
