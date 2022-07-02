@@ -11,18 +11,9 @@ struct FeedView: View {
     var body: some View {
         ScrollView {
             LazyVStack(spacing: 16) {
-//                ForEach(0 ..< 10) { _ in
-//                    FeedCell()
-//                }
-                
                 ForEach(0 ..< 10) { _ in
-                    NavigationLink(
-                        destination: Community(),
-                        label: {
-                            FeedCell()
-                        })
-                }
-                
+                    FeedCell()
+                }   
             }
             .padding(.top)
         }

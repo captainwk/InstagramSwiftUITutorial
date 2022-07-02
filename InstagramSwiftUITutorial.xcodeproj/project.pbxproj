@@ -27,6 +27,7 @@
 		0AC7F7E02864A9C300996AEB /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7F7DF2864A9C300996AEB /* UploadPostView.swift */; };
 		0AC7F7E22864AFD900996AEB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7F7E12864AFD900996AEB /* FeedCell.swift */; };
 		0ADC438528675BF50092000D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC438428675BF50092000D /* SearchBar.swift */; };
+		0AEF105C286FFC4B00E6CE35 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF105B286FFC4B00E6CE35 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		0AC7F7DF2864A9C300996AEB /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		0AC7F7E12864AFD900996AEB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		0ADC438428675BF50092000D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		0AEF105B286FFC4B00E6CE35 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC7F7DD2864A9B300996AEB /* ProfileView.swift */,
+				0AEF105B286FFC4B00E6CE35 /* ProfileHeaderView.swift */,
 			);
 			path = Prifile;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				0AC7F7DE2864A9B300996AEB /* ProfileView.swift in Sources */,
 				0A57D62D2868021A00D3EC07 /* UserCell.swift in Sources */,
 				0ADC438528675BF50092000D /* SearchBar.swift in Sources */,
+				0AEF105C286FFC4B00E6CE35 /* ProfileHeaderView.swift in Sources */,
 				0A2DE2492869CCE00099A99F /* CommunityCell.swift in Sources */,
 				0AC7F7DC2864A99500996AEB /* NotificationsView.swift in Sources */,
 				0AC7F7E22864AFD900996AEB /* FeedCell.swift in Sources */,
