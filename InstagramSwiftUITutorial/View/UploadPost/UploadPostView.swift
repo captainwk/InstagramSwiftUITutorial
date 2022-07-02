@@ -11,11 +11,14 @@ struct UploadPostView: View {
     @State private var selectedImage: UIImage?
     @State var postImage: Image?
     @State var captionText = ""
+    @State var imagePickerPresented = false
     
     var body: some View {
         VStack {
             if postImage == nil {
-                Button(action: {}, label: {
+                Button(action: {
+                    imagePickerPresented.toggle()
+                }, label: {
                     Image(systemName: "plus.app")
                         .resizable()
                         .renderingMode(.template) // 이 옵션을 사용하면 원래 색깔을 무시하고 내가 원하는 색깔로 이미지에 덧칠할 수 있음
@@ -24,10 +27,12 @@ struct UploadPostView: View {
                         .clipped()
                         .padding(.top, 56)
                         .foregroundColor(.black)
+                }).sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                    ImagePicker(image: $selectedImage)
                 })
-            } else {
+            } else if let image = postImage {
                 HStack(alignment: .top) {
-                    Image("Mackenzie")
+                    image
                         .resizable()
                         .scaledToFill()
                         .frame(width: 96, height: 96)
@@ -47,6 +52,13 @@ struct UploadPostView: View {
             }
             Spacer()
         }.padding()
+    }
+}
+
+extension UploadPostView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        postImage = Image(uiImage: selectedImage)
     }
 }
 
