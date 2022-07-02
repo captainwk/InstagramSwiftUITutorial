@@ -20,9 +20,9 @@ struct ProfileHeaderView: View {
                 
                 Spacer()
                 HStack(spacing: 16) {
-                    UserStateView()
-                    UserStateView()
-                    UserStateView()
+                    UserStateView(value: 1, title: "Post")
+                    UserStateView(value: 2, title: "Followers")
+                    UserStateView(value: 3, title: "Following")
                     Spacer()
                 }
             }
@@ -35,35 +35,19 @@ struct ProfileHeaderView: View {
                 .font(.system(size: 15))
                 .padding(.leading)
                 .padding(.top, 1)
-            //
+            
             HStack {
                 Spacer()
-                Button(action: {}, label: {
-                    Text("Edit Profile")
-                        .font(.system(size: 14, weight: .semibold))
-                        .frame(width: 360, height: 32)
-                        .foregroundColor(.black)
-                        .overlay(RoundedRectangle(cornerRadius: 3)
-                                    .stroke(Color.gray, lineWidth: 1.0))
-                })
-                    .padding(.top)
+                
+                ProfileActionButtonView()
+                    
                 Spacer()
-            }
+            }.padding(.top)
         }
     }
 }
 
-struct UserStateView: View {
-    var body: some View {
-        VStack {
-            Text("2")
-                .font(.system(size: 15, weight: .semibold))
-            Text("Followers")
-                .font(.system(size: 15))
-        }
-        .frame(width: 80, alignment: .center)
-    }
-}
+
 
 struct ProfileHeaderView_Previews: PreviewProvider {
     static var previews: some View {
