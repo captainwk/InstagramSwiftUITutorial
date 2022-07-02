@@ -36,7 +36,7 @@ struct Community: View {
             HStack{
                 Spacer()
                 NavigationLink(
-                    destination: CommunityAdd(),
+                    destination: CommunityAdd(title: "", content: ""),
                     label: {
                         Image(systemName: "plus")
                             .font(.system(size: 50))

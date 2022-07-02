@@ -19,7 +19,7 @@ struct CommunityCell: View {
                     .cornerRadius(8)
                 Text("오늘 매니저하고 싸웠어요")
                     .padding(.bottom, -2)
-                Text("오늘 몸이 안좋았지만 다른 사람들한테 피해 주지 않으려고 열심히 일 했는데 매니저가 그런식으로 할 거면 때려치우라고 윽박 질렀어요...")
+                Text("오늘 몸이 안좋았지만 다른 사람들한테 피해 주지 않으려고 열심히 일 했는데 매니저가 그런식...")
                     .foregroundColor(Color.black.opacity(0.7))
                     .padding(.bottom, -2)
                 Text("빵순이")
