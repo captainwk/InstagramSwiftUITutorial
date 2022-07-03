@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RegistrationView: View {
+    @State private var selectedImage: UIImage?
+    @State private var image: Image?
+    @State var imagePickerPresented = false
     @State private var email = ""
     @State private var fullname = ""
     @State private var username = ""
@@ -24,14 +27,31 @@ struct RegistrationView: View {
             
             
             VStack {
-                Button(action: {}, label: {
-                    Image(systemName: "plus.app")
+                if let image = image {
+                    image
                         .resizable()
-                        .renderingMode(.template)
                         .scaledToFill()
                         .frame(width: 140, height: 140)
-                        .foregroundColor(.white)
-                }).padding()
+                        .clipShape(Circle())
+                        .padding()
+                } else {
+                    Button(action: { imagePickerPresented.toggle()}, label: {
+                        Image(systemName: "plus.app")
+                            .resizable()
+                            .renderingMode(.template)
+                            .scaledToFill()
+                            .frame(width: 140, height: 140)
+                            .foregroundColor(.white)
+                    })
+                        .sheet(
+                            isPresented: $imagePickerPresented,
+                            onDismiss: loadImage,
+                            content: {
+                                ImagePicker(image: $selectedImage)
+                            }
+                        )
+                        .padding()
+                }
                 
                 VStack(spacing: 20) {
                     // email field
@@ -94,6 +114,13 @@ struct RegistrationView: View {
                 })
             }
         }
+    }
+}
+
+extension RegistrationView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        image = Image(uiImage: selectedImage)
     }
 }
 
