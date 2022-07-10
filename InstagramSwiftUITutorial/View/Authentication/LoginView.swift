@@ -64,7 +64,6 @@ struct LoginView: View {
                     // sign in
                     Button(action: {
                         viewModel.login()
-                        
                     }, label: {
                         Text("Sign In")
                             .font(.headline)
