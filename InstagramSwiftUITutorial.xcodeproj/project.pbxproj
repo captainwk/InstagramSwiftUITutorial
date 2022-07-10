@@ -45,6 +45,7 @@
 		0AEF105E2870243C00E6CE35 /* UserStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF105D2870243C00E6CE35 /* UserStateView.swift */; };
 		0AEF10602870250D00E6CE35 /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF105F2870250D00E6CE35 /* ProfileActionButtonView.swift */; };
 		649826A2287A562600715089 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 649826A1287A562600715089 /* GoogleService-Info.plist */; };
+		649826A4287AE74900715089 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649826A3287AE74900715089 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		0AEF105D2870243C00E6CE35 /* UserStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateView.swift; sourceTree = "<group>"; };
 		0AEF105F2870250D00E6CE35 /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 		649826A1287A562600715089 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		649826A3287AE74900715089 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				0A6659C928709F4300C41541 /* ApiTest.swift */,
+				649826A3287AE74900715089 /* ImageUploader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				0A57D62D2868021A00D3EC07 /* UserCell.swift in Sources */,
 				0ADC438528675BF50092000D /* SearchBar.swift in Sources */,
 				0A774D40287169EB00BB150B /* RegistrationView.swift in Sources */,
+				649826A4287AE74900715089 /* ImageUploader.swift in Sources */,
 				0AEF105C286FFC4B00E6CE35 /* ProfileHeaderView.swift in Sources */,
 				0A2DE2492869CCE00099A99F /* CommunityCell.swift in Sources */,
 				0AC7F7DC2864A99500996AEB /* NotificationsView.swift in Sources */,
