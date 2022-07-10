@@ -21,6 +21,10 @@ class AuthViewModel: ObservableObject {
     func signout() {
         
     }
+    
+    func resetPassword() {
+         
+    }
 
     func fetchUser() {
         

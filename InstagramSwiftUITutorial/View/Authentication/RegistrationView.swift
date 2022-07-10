@@ -16,6 +16,7 @@ struct RegistrationView: View {
     @State private var username = ""
     @State private var password = ""
     @Environment(\.presentationMode) var mode
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
         ZStack {
             LinearGradient(
@@ -87,7 +88,9 @@ struct RegistrationView: View {
                 
                 
                 // sign in
-                Button(action: {}, label: {
+                Button(action: {
+                    viewModel.register()
+                }, label: {
                     Text("Sign Up")
                         .font(.headline)
                         .foregroundColor(.white)
