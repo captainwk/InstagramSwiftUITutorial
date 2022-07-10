@@ -9,9 +9,14 @@ import Foundation
 import Firebase
 
 class AuthViewModel: ObservableObject {
+    @Published var userSession: Firebase.User?
     
+    init() {
+        userSession = Auth.auth().currentUser
+    }
     func login() {
         print("Login")
+        
     }
 
     func register() {

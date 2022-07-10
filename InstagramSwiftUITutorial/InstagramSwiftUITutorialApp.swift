@@ -24,8 +24,8 @@ struct InstagramSwiftUITutorialApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            LoginView().environmentObject(AuthViewModel())
+            ContentView().environmentObject(AuthViewModel())
+//            LoginView().environmentObject(AuthViewModel())
         }
     }
 }
