@@ -38,6 +38,7 @@ struct LoginView: View {
                             .cornerRadius(10)
                             .foregroundColor(.white)
                             .padding(.horizontal, 16)
+                            .autocapitalization(.none)
                         
                         // password field
                         CustomSecureField(text: $password, placeholder: Text("Password"))
@@ -46,6 +47,7 @@ struct LoginView: View {
                             .cornerRadius(10)
                             .foregroundColor(.white)
                             .padding(.horizontal, 16)
+                            .autocapitalization(.none)
                     }
                     
                     // forgot password
@@ -63,7 +65,7 @@ struct LoginView: View {
                     
                     // sign in
                     Button(action: {
-                        viewModel.login()
+                        viewModel.login(withEmail: email, password: password)
                     }, label: {
                         Text("Sign In")
                             .font(.headline)
