@@ -23,7 +23,6 @@ func makePostRequest() {
     // method, body, headers
     request.httpMethod = "POST"
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-    request.setValue("application/json", forHTTPHeaderField: "Content-Type")
     let body: [String: AnyHashable] = [
         "no": "1",
         "test": "a",
@@ -47,5 +46,7 @@ func makePostRequest() {
     }
     task.resume()
 }
+
+
 
 
